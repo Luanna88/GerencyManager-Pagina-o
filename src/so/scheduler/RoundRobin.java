@@ -1,5 +1,5 @@
 package so.scheduler;
 
-public class RoundRobin {
+public class RoundRobin extends Scheduler {
 
 }
