@@ -15,4 +15,17 @@ public class FCFS extends SchedulerQueue {
 		});
 	}
 
+	@Override
+    public boolean isEmpty() {
+        return getQueue().isEmpty();
+    }
+
+    @Override
+    public void scheduleNextProcess() {
+        if (!isEmpty()) {
+            Process nextProcess = getQueue().poll(); 
+        } else {
+            System.out.println("A fila de processos está vazia."); 
+        }
+    }
 }
