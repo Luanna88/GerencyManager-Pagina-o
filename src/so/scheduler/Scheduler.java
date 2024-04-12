@@ -2,7 +2,6 @@ package so.scheduler;
 
 import so.cpu.CpuManager;
 import so.Process;
-import so.SubProcess;
 
 public abstract class Scheduler {
     private CpuManager cm;
@@ -11,15 +10,12 @@ public abstract class Scheduler {
         cm = new CpuManager();
     }
 
-    public void execute(Process p) {
-
-    }
-
-    public void finish(Process p) {
-        
-    }
-
     public CpuManager getCm() {
         return cm;
     }
+    public abstract void execute (Process p);
+    public abstract void finish (Process p);
+	public abstract  boolean isEmpty();
+
+	public abstract void scheduleNextProcess();
 }
