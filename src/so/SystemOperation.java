@@ -7,9 +7,9 @@ import so.scheduler.FCFS;
 import so.scheduler.Scheduler;
 
 public class SystemOperation {
-	private static MemoryManager mm;
-	private static Scheduler scheduler;
-	
+	public  static MemoryManager mm;
+	 public static Scheduler scheduler ;
+	 
 	public static Process systemCall(SystemCallType type, int sizeInMemory){
 		if (type.equals(SystemCallType.CREATE_PROCESS)) {
 			if (Objects.isNull(mm)) {
@@ -37,4 +37,3 @@ public class SystemOperation {
 		return null;
 	}
 }
-
