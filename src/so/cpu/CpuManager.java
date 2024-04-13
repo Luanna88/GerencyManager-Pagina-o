@@ -47,8 +47,11 @@ public class CpuManager {
 		return this.cores;
 	}
 
-	public void registerProcess(int i, Process p) {
-		// TODO Auto-generated method stub
+	public void runProcess(Process p) {
+		
+	}
+
+	public void finishProcess(Process p) {
 		
 	}
 
